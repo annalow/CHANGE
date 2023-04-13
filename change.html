@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en"> 
+<head> 
+<title> 
+	CHANGE TAKES TIME
+</title> 
+<meta charset = "utf-8"> 
+<link href="changeFile.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=BenchNine:wght@400&display=swap" rel="stylesheet">
+<style>
+	#circleText {
+  animation: rotation 12.5s infinite linear;
+}
+
+	@keyframes rotation {
+  	from {
+    	transform: rotate(359deg);
+ 	 }
+  	to {
+   	 transform: rotate(0deg);
+  	}
+
+
+</style>
+
+</head>
+
+<body> 
+
+<script>
+	const changeList = ['CHANGE','CAMBIO','CANVI','PROMJENA','PŘEMĚNA','LAVE OM','VERANDERING','MUUTUS','PAGBABAGO','CHANGEMENT','VERÄNDERUNG','CHANJMAN','HOOLOLI','FORDULAT','BREYTING','PERUBAHAN',"ATHRÚ",'CAMBIAMENTO','MUTATIO','KAITA','ENDRING','ZMIANA']; 
+	// 22
+	var index = 1;
+    function clickChange(){
+            if(index<22){
+            	document.getElementById("changeText").innerHTML = changeList[index];
+				index+=1;	
+            }
+			
+            else{
+            	index=0;
+            	document.getElementById("changeText").innerHTML = changeList[index];
+				index+=1;
+            }
+            console.log(index);
+        }
+</script>
+
+<script src="circletype.js"></script>
+
+
+	
+
+	<div id="circle">
+		<div id= "circleText">.CHANGE.TAKES.TIME.TAKES.CHANGE.TAKES.TIME.TAKES.CHANGE.TAKES.TIME.TAKES </div>
+	</div>
+
+
+	<button onclick="clickChange()"></button>
+
+	<div id="changeText"> CHANGE </div>
+
+	
+
+<script>new CircleType(document.getElementById('circleText')) ;	</script>
+
+
+
+</body>
+
+
+</html> 

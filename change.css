@@ -1,0 +1,37 @@
+#circleText {
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(359deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+
+  h2{
+	padding:3em;
+	margin:2em;
+	text-indent:2em;
+	border-radius: 10px;
+}
+
+#circleText{
+	/*z-index:1;*/
+}
+
+#change{
+  display:flex;
+  margin:auto;
+  /*z-index:2;*/
+  width:50%;
+  border: 3px solid green;
+  color:green;
+
+}
+
+#changeText{
+  font-size:72pt;
+  text-align:center;
+}
